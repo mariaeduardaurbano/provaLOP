@@ -74,6 +74,7 @@ void cadastrarProduto() {
 }
 
 void mostraProduto() {
+    system("clear");
     if (produto.quantidade < 0) {
         printf("Ainda não existem produtos cadastrados.\n");
     }
@@ -81,6 +82,8 @@ void mostraProduto() {
     printf("Nome: %s\n", produto.nome);
     printf("Quantidade no estoque: %d\n", produto.quantidade);
     printf("Preço do produto: %.2f reais\n", produto.preco);
+    
+    finalizaFuncao();
 }
 
 void realizarCompra() {
